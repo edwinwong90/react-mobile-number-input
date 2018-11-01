@@ -29,6 +29,7 @@ b[class^='react-number-input__btn-'] {
   bottom: 1px;
   display: table-cell;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .react-number-input__btn-increment {

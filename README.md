@@ -3,7 +3,7 @@
 
 ## Install
 ```javascript
-npm i edwinwong90/react-number-input
+npm i react-mobile-number-input
 ```
 
 ## API
@@ -31,8 +31,8 @@ npm i edwinwong90/react-number-input
 ## Usage
 
 ```javascript
-import NumberInput from 'react-number-input';
-import '../node_modules/react-number-input/assets/numberInput.css'
+import NumberInput from 'react-mobile-number-input';
+import '../node_modules/react-mobile-number-input/assets/numberInput.css'
 
 export default class App extends React.Component {
 
