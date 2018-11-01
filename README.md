@@ -1,4 +1,4 @@
-# react-number-input
+# react-mobile-number-input
 
 
 ## Install
