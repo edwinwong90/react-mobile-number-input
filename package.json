@@ -1,6 +1,6 @@
 {
   "name": "react-mobile-number-input",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React number input make simple",
   "main": "build/index.js",
   "dependencies": {
