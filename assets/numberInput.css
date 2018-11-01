@@ -13,6 +13,12 @@
   border: 1px solid #dcdcdc;
 }
 
+.react-number-input__input[type=number]::-webkit-inner-spin-button,
+.react-number-input__input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 b[class*=' react-number-input__btn-'],
 b[class^='react-number-input__btn-'] {
   position: absolute;
@@ -21,6 +27,8 @@ b[class^='react-number-input__btn-'] {
   font-weight: 400;
   padding: 0 15px;
   bottom: 1px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .react-number-input__btn-increment {

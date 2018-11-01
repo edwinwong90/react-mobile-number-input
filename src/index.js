@@ -39,7 +39,7 @@ class NumberInput extends React.Component {
       onChange, pattern, type,
       maxLength, minLength, disabled,
       name, required, placeholder,
-      readOnly
+      readOnly, style
     } = this.props
     const { quantity } = this.state
     return (
@@ -58,6 +58,7 @@ class NumberInput extends React.Component {
             required={required}
             placeholder={placeholder}
             readOnly={readOnly}
+            style={style}
           />
           <b
             className="react-number-input__btn-increment"
@@ -91,14 +92,15 @@ NumberInput.defaultProps = {
   readOnly: false,
   step: 1,
   min: null,
-  max: null
+  max: null,
+  style: {},
 }
 
 NumberInput.propTypes = {
   value: PropTypes.any.isRequired,
   onChange: PropTypes.func,
   pattern: PropTypes.string,
-  type: PropTypes.string,
+  type: PropTypes.oneOf(['number', 'tel', 'text']),
   maxLength: PropTypes.number,
   minLength: PropTypes.number,
   disabled: PropTypes.bool,
@@ -108,7 +110,8 @@ NumberInput.propTypes = {
   readOnly: PropTypes.bool,
   step: PropTypes.number,
   min: PropTypes.any,
-  max: PropTypes.any
+  max: PropTypes.any,
+  style: PropTypes.object
 }
 
 export default NumberInput;

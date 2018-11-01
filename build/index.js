@@ -406,7 +406,8 @@ var NumberInput = function (_React$Component) {
           name = _props3.name,
           required = _props3.required,
           placeholder = _props3.placeholder,
-          readOnly = _props3.readOnly;
+          readOnly = _props3.readOnly,
+          style = _props3.style;
       var quantity = this.state.quantity;
 
       return _react2.default.createElement(
@@ -427,7 +428,8 @@ var NumberInput = function (_React$Component) {
             disabled: disabled,
             required: required,
             placeholder: placeholder,
-            readOnly: readOnly
+            readOnly: readOnly,
+            style: style
           }),
           _react2.default.createElement(
             'b',
@@ -467,14 +469,15 @@ NumberInput.defaultProps = {
   readOnly: false,
   step: 1,
   min: null,
-  max: null
+  max: null,
+  style: {}
 };
 
 NumberInput.propTypes = {
   value: _propTypes2.default.any.isRequired,
   onChange: _propTypes2.default.func,
   pattern: _propTypes2.default.string,
-  type: _propTypes2.default.string,
+  type: _propTypes2.default.oneOf(['number', 'tel', 'text']),
   maxLength: _propTypes2.default.number,
   minLength: _propTypes2.default.number,
   disabled: _propTypes2.default.bool,
@@ -484,7 +487,8 @@ NumberInput.propTypes = {
   readOnly: _propTypes2.default.bool,
   step: _propTypes2.default.number,
   min: _propTypes2.default.any,
-  max: _propTypes2.default.any
+  max: _propTypes2.default.any,
+  style: _propTypes2.default.object
 };
 
 exports.default = NumberInput;
