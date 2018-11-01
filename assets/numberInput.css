@@ -1,0 +1,32 @@
+.react-number-input {
+  font-size: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.react-number-input__input {
+  font-size: inherit;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #dcdcdc;
+}
+
+b[class*=' react-number-input__btn-'],
+b[class^='react-number-input__btn-'] {
+  position: absolute;
+  top: 1px;
+  font-size: x-large;
+  font-weight: 400;
+  padding: 0 15px;
+  bottom: 1px;
+}
+
+.react-number-input__btn-increment {
+  right: 1px;
+}
+
+.react-number-input__btn-decrement {
+  left: 1px;
+}
