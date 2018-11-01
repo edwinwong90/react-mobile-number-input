@@ -31,6 +31,7 @@ npm i edwinwong90/react-number-input
 
 ```javascript
 import NumberInput from 'react-number-input';
+import '../node_modules/react-number-input/assets/numberInput.css'
 
 export default class App extends React.Component {
 
