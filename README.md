@@ -25,6 +25,7 @@ npm i edwinwong90/react-number-input
 |placeholder|String||Specifies the <input /> placholder attribute
 |readOnly|Boolean|false|Specifies the <input /> readonly attribute
 |step|Number|1|Specifies the increment and decrement value (triger by +/- button)
+|style|String|{}|Specifies the <input /> style attribute
 |onChange|Function||Called when value of an InputNumber changed
 
 ## Usage
